@@ -197,6 +197,58 @@ footer {
 @media (max-width:600px) {
   .hero h1 { font-size:2.3rem; }
 }
+/* ---------- SERVICES ---------- */
+.services {
+  max-width:1000px;
+  margin:auto;
+}
+
+.service-list {
+  list-style:none;
+  display:grid;
+  gap:26px;
+  margin-top:50px;
+}
+
+.service-list li {
+  display:flex;
+  gap:22px;
+  align-items:flex-start;
+  background:var(--card);
+  padding:30px;
+  border-radius:22px;
+  border-left:4px solid var(--accent);
+  transition:.35s ease;
+}
+
+.service-list li:hover {
+  transform:translateY(-6px);
+  box-shadow:0 12px 35px rgba(0,0,0,.4);
+}
+
+.service-list .icon {
+  font-size:2.2rem;
+  line-height:1;
+}
+
+.service-list h3 {
+  margin-bottom:6px;
+  font-size:1.25rem;
+  color:var(--accent);
+}
+
+.service-list p {
+  color:var(--soft);
+  font-size:1rem;
+}
+
+/* ---------- DESKTOP ENHANCEMENT ---------- */
+@media (min-width:768px) {
+  .service-list {
+    grid-template-columns:1fr 1fr;
+  }
+}
+
 </style>
 </head>
 
@@ -215,15 +267,44 @@ footer {
 </div>
 
 <!-- SERVICES -->
-<section>
+<section class="services">
   <h2>What I Can Help With</h2>
-  <div class="grid">
-    <div class="card"><h3>🎉 Parties</h3><p>Relaxed, fun, dancefloor-focused nights.</p></div>
-    <div class="card"><h3>💍 Weddings</h3><p>From first dance to last song — your way.</p></div>
-    <div class="card"><h3>🎂 Birthdays</h3><p>Music that fits your crowd properly.</p></div>
-    <div class="card"><h3>🏢 Work Events</h3><p>Professional but never stiff.</p></div>
-  </div>
+
+  <ul class="service-list">
+    <li>
+      <span class="icon">🎉</span>
+      <div>
+        <h3>Parties</h3>
+        <p>Fun, relaxed nights built around energy and a full dancefloor.</p>
+      </div>
+    </li>
+
+    <li>
+      <span class="icon">💍</span>
+      <div>
+        <h3>Weddings</h3>
+        <p>From first dance to last song — tailored, smooth and stress-free.</p>
+      </div>
+    </li>
+
+    <li>
+      <span class="icon">🎂</span>
+      <div>
+        <h3>Birthdays</h3>
+        <p>Music that fits your crowd properly, whatever the age or vibe.</p>
+      </div>
+    </li>
+
+    <li>
+      <span class="icon">🏢</span>
+      <div>
+        <h3>Work & Corporate Events</h3>
+        <p>Professional, polished and never awkward or stiff.</p>
+      </div>
+    </li>
+  </ul>
 </section>
+
 
 <!-- ABOUT -->
 <section>
