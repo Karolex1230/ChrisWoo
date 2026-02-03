@@ -248,11 +248,45 @@ footer {
     grid-template-columns:1fr 1fr;
   }
 }
+/* SOCIAL ICON TOP-RIGHT */
+.social-facebook {
+  position:fixed;
+  top:20px;
+  right:20px;
+  z-index:1000;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:40px;
+  height:40px;
+  background:var(--accent);
+  border-radius:50%;
+  box-shadow:0 5px 15px rgba(0,0,0,.4);
+  transition:transform .3s, background .3s;
+}
+
+.social-facebook svg {
+  width:20px;
+  height:20px;
+  fill:#ffffff;
+}
+
+.social-facebook:hover {
+  transform:scale(1.1);
+  background:#3b5998; /* Facebook blue on hover */
+}
+
 
 </style>
 </head>
 
 <body>
+<!-- SOCIAL ICON TOP-RIGHT -->
+<a href="https://www.facebook.com/search/top?q=chriswoo%20music%20events" target="_blank" class="social-facebook" aria-label="Facebook">
+  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="#ffffff">
+    <path d="M22.675 0h-21.35c-.733 0-1.325.592-1.325 1.325v21.351c0 .733.592 1.324 1.325 1.324h11.495v-9.294h-3.123v-3.622h3.123v-2.671c0-3.1 1.892-4.788 4.658-4.788 1.325 0 2.464.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.31h3.587l-.467 3.622h-3.12V24h6.116c.733 0 1.324-.591 1.324-1.324V1.325C24 .592 23.408 0 22.675 0z"/>
+  </svg>
+</a>
 
 <!-- HERO -->
 <div class="hero">
@@ -396,8 +430,10 @@ footer {
 
 <footer>
   DJ ChrisWoo · Belfast, Northern Ireland<br>
-  Friendly DJ · Good music · Proper nights
+  Friendly DJ · Good music · Proper nights · 
+  <a href="policy.html" style="color:var(--soft); font-size:0.85rem; text-decoration:underline;">Event Policy</a>
 </footer>
+
 
 <a class="whatsapp" href="https://wa.me/447000000000" target="_blank">
   💬 WhatsApp Chris
