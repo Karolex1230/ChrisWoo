@@ -417,16 +417,21 @@ footer {
 <!-- CONTACT -->
 <section id="contact">
   <h2>Let’s Talk</h2>
-  <form>
-    <input type="text" placeholder="Your name" required>
-    <input type="email" placeholder="Email">
-    <input type="text" placeholder="Occasion">
-    <input type="text" placeholder="Location">
-    <input type="date">
-    <textarea placeholder="Anything I should know?"></textarea>
-    <button class="cta">Send Message</button>
+  <form action="https://formspree.io/f/abcdwxyz" method="POST">
+    <input type="text" name="name" placeholder="Your name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="text" name="occasion" placeholder="Occasion">
+    <input type="text" name="location" placeholder="Location">
+    <input type="date" name="date">
+    <textarea name="message" placeholder="Anything I should know?"></textarea>
+
+    <!-- optional spam protection -->
+    <input type="text" name="_gotcha" style="display:none">
+
+    <button class="cta" type="submit">Send Message</button>
   </form>
 </section>
+
 
 <footer>
   DJ ChrisWoo · Belfast, Northern Ireland<br>
@@ -435,7 +440,7 @@ footer {
 </footer>
 
 
-<a class="whatsapp" href="https://wa.me/447000000000" target="_blank">
+<a class="whatsapp" href="https://wa.me/447598915769" target="_blank">
   💬 WhatsApp Chris
 </a>
 
